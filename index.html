@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Maven+Pro&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon"
+    href="https://coronavirus.es.gov.br/Media/Coronavirus/_Profiles/c4d8c6e6/dc28e5c5/dinheiro.png?v=637789100773512480"
+    type="image/x-icon">
+  <title>Valores</title>
+</head>
+
+<body>
+
+  <h1>Cotação de Valores</h1>
+
+  <main>
+    <form class="container">
+      <label for="moedas">Moeda: </label>
+      <select id="moedas">
+        <option value="None">None</option>
+      </select>
+    </form>
+
+    <table class="currentQuota">
+      <thead>
+        <th>Ultima cotação</th>
+        <th>Data e Hora</th>
+        <th>Valor min.</th>
+        <th>Valor max.</th>
+        <th>Fechamento</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <form class="distance">
+
+      <div class="choices">
+        <label for="date-in">Data de Início: </label>
+        <input type="date" id="date-in" />
+      </div>
+
+      <div class="choices">
+        <label for="date-out">Data de Fim: </label>
+        <input type="date" id="date-out" />
+      </div>
+
+    </form>
+
+    <button type="button" id="show">Exibir</button>
+
+    <table class="period">
+      <thead>
+        <th>Ultima cotação</th>
+        <th>Data e Hora</th>
+        <th>Valor min.</th>
+        <th>Valor max.</th>
+        <th>Fechamento</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
